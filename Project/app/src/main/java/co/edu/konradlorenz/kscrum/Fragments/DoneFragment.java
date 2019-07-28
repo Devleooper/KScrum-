@@ -117,7 +117,7 @@ public class DoneFragment extends Fragment {
         pbiRecycler.setHasFixedSize(true);
         RecyclerView.LayoutManager reclaLayoutManager = new LinearLayoutManager(getContext());
         pbiRecycler.setLayoutManager(reclaLayoutManager);
-        pbiAdapter = new PbiAdapter(getContext(), pbis);
+        pbiAdapter = new PbiAdapter(getContext(), pbis , getActivity().getIntent());
         pbiRecycler.setAdapter(pbiAdapter);
     }
 

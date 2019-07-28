@@ -35,10 +35,10 @@ public class PbiAdapter extends RecyclerView.Adapter<PbiAdapter.PbiAdapterHolder
     private CardView cardView;
     private Sprint sprint;
 
-    public PbiAdapter(Context context, List<Pbi> pbiList) {
+    public PbiAdapter(Context context, List<Pbi> pbiList , Intent intent) {
         this.context = context;
         this.pbiList = pbiList;
-         sprint = (Sprint) ((Activity)context).getIntent().getSerializableExtra("sprint");
+         sprint =  (Sprint) intent.getSerializableExtra("sprint");
     }
 
     @NonNull
